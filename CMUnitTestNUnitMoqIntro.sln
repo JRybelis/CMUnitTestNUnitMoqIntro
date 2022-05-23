@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting.GettingStarted.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting.GettingStarted", "UnitTesting.GettingStarted\UnitTesting.GettingStarted.csproj", "{ADB5A7B6-3E4A-4D4E-97CB-7DCF68701273}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMockerExampleConsoleApp", "AutoMockerExampleConsoleApp\AutoMockerExampleConsoleApp.csproj", "{0D7578FF-AB9E-496D-B62B-3493C70C8661}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{ADB5A7B6-3E4A-4D4E-97CB-7DCF68701273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADB5A7B6-3E4A-4D4E-97CB-7DCF68701273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADB5A7B6-3E4A-4D4E-97CB-7DCF68701273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7578FF-AB9E-496D-B62B-3493C70C8661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7578FF-AB9E-496D-B62B-3493C70C8661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7578FF-AB9E-496D-B62B-3493C70C8661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7578FF-AB9E-496D-B62B-3493C70C8661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
