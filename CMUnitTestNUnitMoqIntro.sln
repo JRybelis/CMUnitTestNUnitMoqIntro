@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMockerExampleConsoleApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMockerExampleCore", "AutoMockerExampleCore\AutoMockerExampleCore.csproj", "{43EF60E1-67E3-43EF-A330-A3B6CE01B870}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMockerExampleCore.Test", "AutoMockerExampleCore.Test\AutoMockerExampleCore.Test.csproj", "{CC2B2AE0-6C90-43A3-BB93-B3E4B3904AAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{43EF60E1-67E3-43EF-A330-A3B6CE01B870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43EF60E1-67E3-43EF-A330-A3B6CE01B870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43EF60E1-67E3-43EF-A330-A3B6CE01B870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2B2AE0-6C90-43A3-BB93-B3E4B3904AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2B2AE0-6C90-43A3-BB93-B3E4B3904AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2B2AE0-6C90-43A3-BB93-B3E4B3904AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2B2AE0-6C90-43A3-BB93-B3E4B3904AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
