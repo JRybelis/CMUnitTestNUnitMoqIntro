@@ -37,8 +37,11 @@ namespace AutoMockerExampleCore.Test
         {
             // Arrange
             var autoMocker = new AutoMocker();
+            
+            // I tell AutoMocker that I want to use this stub if any class requests an instance of IFooService:
             var fooServiceStub = new FooServiceStub();
             autoMocker.Use<IFooService>(fooServiceStub);
+            
             var unitUnderTest = autoMocker.CreateInstance<BarService>();
             
             // Pre-assert
@@ -49,6 +52,27 @@ namespace AutoMockerExampleCore.Test
             
             // Assert
             Assert.That(fooServiceStub, Has.Count.EqualTo(45));
+        }
+
+        [Test]
+        public void DoOtherThing_Always_ShouldPerformMockedBehaviour()
+        {
+            // Arrange
+            var autoMocker = new AutoMocker();
+            
+            // I setup AutoMocker to use a dynamically stubbed implementation of ISomeOtherService.
+            // I instruct it to return the integer 30 when it receives the string “value”.
+            autoMocker.Use<ISomeOtherService>(x => x.GetSomeValue("value") == 30);
+            
+            var unitUnderTest = autoMocker.CreateInstance<BarService>();
+            
+            // Act 
+            var result = unitUnderTest.DoOtherThing("value");
+            
+            // Assert
+            // I make an assertion that the correct value is returned, but also that all invocations setup on the mock are performed correctly, via the standard “VerifyAll()” method.
+            Assert.That(result, Is.EqualTo(30));
+            autoMocker.GetMock<ISomeOtherService>().VerifyAll();
         }
     }
 }
